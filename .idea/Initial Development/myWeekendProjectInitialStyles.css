@@ -1,0 +1,8 @@
+body {
+    border-style: border-box;
+    height: 100%;
+}
+
+#testImg{
+    height: 250px;
+}
