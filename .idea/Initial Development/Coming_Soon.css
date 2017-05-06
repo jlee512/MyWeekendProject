@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+.col1, .col2, .col3 {
+    width: 33%;
+}
+
+
+
