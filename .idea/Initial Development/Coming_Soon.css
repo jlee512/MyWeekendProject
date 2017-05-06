@@ -32,6 +32,41 @@
     transform: rotateY(180deg);
 }
 
+#fryPan {
+    animation-name: fryPanshake;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+#fryPan:hover {
+    /*Add pancake flip animation once user hovers on frying pan*/
+
+}
+
+
+
+@keyframes fryPanshake {
+    0% {
+        transform: rotateY(180deg) translateX(0px);
+    }
+    20% {
+        transform: rotateY(180deg) translateX(10px);
+    }
+    40% {
+        transform: rotateY(180deg) translateX(-10px);
+    }
+    60%{
+        transform: rotateY(180deg) translateX(15px);
+    }
+    80% {
+        transform: rotateY(180deg) translateX(-10px);
+    }
+    100% {
+        transform: rotateY(180deg) translateX(0px);
+    }
+}
+
 /*For desktop*/
 @media only screen and (min-width: 768px) {
 .col-1{
