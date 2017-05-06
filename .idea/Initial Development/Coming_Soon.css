@@ -6,8 +6,29 @@
     background-color: #80e5ff;
 }
 
+/*Text Formatting*/
 .header {
     text-align: center;
+    color: #ffff80;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+p{
+    text-align: center;
+}
+
+/*Check box formatting*/
+#checkbox{
+    height: 2em;
+    width: 2em;
+    border: solid black 1px;
+    border-radius: 0.5em;
+    background-color: aliceblue;
+    transition: background-color 1s ease;
+}
+
+#checkbox:hover{
+    background-color: #ffff80;
 }
 
 /*For mobile phonse and default styling*/
@@ -16,8 +37,15 @@
     float: left;
 }
 
-.row.blank{
-    height: 40%;
+/*Clear the flow at the end of each row*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row.blank {
+    padding: 10%;
 }
 
 #fryPan {
@@ -67,33 +95,39 @@
 
 /*For desktop*/
 @media only screen and (min-width: 768px) {
-.col-1{
-    width: 33.33%;
-}
 
-.col-2{
-    width: 66.66%;
-}
+    .col-1 {
+        width: 33.33%;
+    }
 
-.col-3{
-    width: 100%;
-}
+    .col-2 {
+        width: 66.66%;
+    }
 
-[class*="col-"]{
-    float: left;
-}
+    .col-3 {
+        width: 100%;
+    }
 
-/*Clear the flow at the end of each row*/
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+    [class*="col-"] {
+        float: left;
+    }
 
-/*Increase font size for large screen*/
+    .row.blank {
+        padding: 7.5%;
+    }
 
+    /*Increase font size for large screen*/
+    h1 {
+        font-size: 4em;
+    }
 
+    p {
+        font-size: 2em;
+    }
 
+    .row.blank.large {
+        height: 30%;
+    }
 }
 
 
