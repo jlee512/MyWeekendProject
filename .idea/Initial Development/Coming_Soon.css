@@ -6,6 +6,25 @@
     background-color: #80e5ff;
 }
 
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#headerRow{
+    height: 40vh;
+}
+
+#animationRow{
+    height: 30vh;
+}
+
+#welcomeMessage{
+    height: 30vh;
+}
+
 /*Text Formatting*/
 .header {
     text-align: center;
@@ -13,28 +32,67 @@
     text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
 }
 
+div#welcomeText{
+    padding: 5%;
+    margin: auto;
+    float: left;
+}
+
+div#checkbox{
+    padding: 5%;
+    margin: auto;
+    float: left;
+}
+
 p{
-    text-align: center;
+    padding: 0% 5%;
+    margin: 0;
+    size: 2em;
 }
 
 /*Check box formatting*/
-#checkbox{
-    height: 2em;
-    width: 2em;
+#checkbox_white{
+    height: 1em;
+    width: 1em;
+    margin-left: 5%;
     border: solid black 1px;
-    border-radius: 0.5em;
+    border-radius: 0.25em;
+    display: inline-block;
     background-color: aliceblue;
-    transition: background-color 1s ease;
+    float: left;
 }
 
-#checkbox:hover{
-    background-color: #ffff80;
+#checkbox_yolk{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    transform: translate(0, 50%);
+    border: solid black 1px;
+    border-radius: 0.5em;
+    background-color: yellow;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+#checkbox_white:hover > #checkbox_yolk{
+    opacity: 1;
 }
 
 /*For mobile phonse and default styling*/
 [class*="col-"] {
-    width: 100%;
     float: left;
+}
+
+.col-1 {
+    width: 33.33%;
+}
+
+.col-2 {
+    width: 66.66%;
+}
+
+.col-3 {
+    width: 100%;
 }
 
 /*Clear the flow at the end of each row*/
@@ -50,7 +108,7 @@ p{
 
 #fryPan {
     margin: auto;
-    width: 50%;
+    height: 25vh;
     display: block;
 
     -webkit-transform: rotateY(180deg);
@@ -96,24 +154,8 @@ p{
 /*For desktop*/
 @media only screen and (min-width: 768px) {
 
-    .col-1 {
-        width: 33.33%;
-    }
-
-    .col-2 {
-        width: 66.66%;
-    }
-
-    .col-3 {
-        width: 100%;
-    }
-
-    [class*="col-"] {
-        float: left;
-    }
-
     .row.blank {
-        padding: 7.5%;
+        padding: 2%;
     }
 
     /*Increase font size for large screen*/
