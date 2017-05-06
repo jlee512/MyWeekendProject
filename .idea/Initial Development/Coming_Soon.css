@@ -44,8 +44,6 @@
 
 }
 
-
-
 @keyframes fryPanshake {
     0% {
         transform: rotateY(180deg) translateX(0px);
@@ -91,6 +89,10 @@
     clear: both;
     display: table;
 }
+
+/*Increase font size for large screen*/
+
+
 
 }
 
