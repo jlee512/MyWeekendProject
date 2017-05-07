@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    background-color: #80e5ff;
 }
 
 html, body{
@@ -11,14 +10,31 @@ html, body{
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: #80ced6;
+}
+
+hr{
+    height: 5px;
+    width: 100%;
+    color: #fefbd8;
+    background: #fefbd8;
+    font-size: 0;
+    border: 0;
 }
 
 #headerRow{
-    height: 40vh;
+}
+
+#blankRow{
+    height: 20vh;
+    background-image: url("Photos/refillBackground.png");
+    background-size: 100%;
 }
 
 #animationRow{
     height: 30vh;
+    background-image: url("Photos/refillBackground.png");
+    background-size: 100%;
 }
 
 #welcomeMessage{
@@ -27,21 +43,28 @@ html, body{
     flex-direction: row;
     align-items: center;
     list-style-type: none;
+    background-image: url("Photos/refillBackground.png");
+    background-size: 100%;
+}
+
+.header.col-3{
+    background-color: #d5f4e6;
+}
+
+h1 {
+    background-color: inherit;
 }
 
 /*Text Formatting*/
 .header {
     text-align: center;
-    color: #ffff80;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+    color: black;
 }
 
 p{
     margin: auto;
     display: block;
 }
-
-
 
 /*Check box formatting*/
 #checkbox_white{
@@ -51,7 +74,7 @@ p{
     border: solid black 1px;
     border-radius: 0.25em;
     display: inline-block;
-    background-color: aliceblue;
+    transition: background-color 2s ease;
 }
 
 #checkbox_yolk{
@@ -68,6 +91,13 @@ p{
 
 #checkbox_white:hover > #checkbox_yolk{
     opacity: 1;
+}
+
+#checkbox_white:hover{
+    background-color: aliceblue;
+}
+
+#ProjectUnoText{
 }
 
 /*For mobile phonse and default styling*/
