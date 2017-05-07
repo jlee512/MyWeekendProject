@@ -22,7 +22,11 @@ html, body{
 }
 
 #welcomeMessage{
-    height: 30vh;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
 }
 
 /*Text Formatting*/
@@ -32,41 +36,29 @@ html, body{
     text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
 }
 
-div#welcomeText{
-    padding: 5%;
-    margin: auto;
-    float: left;
-}
-
-div#checkbox{
-    padding: 5%;
-    margin: auto;
-    float: left;
-}
-
 p{
-    padding: 0% 5%;
-    margin: 0;
-    size: 2em;
+    margin: auto;
+    display: block;
 }
+
+
 
 /*Check box formatting*/
 #checkbox_white{
-    height: 1em;
-    width: 1em;
-    margin-left: 5%;
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
     border: solid black 1px;
     border-radius: 0.25em;
     display: inline-block;
     background-color: aliceblue;
-    float: left;
 }
 
 #checkbox_yolk{
+    display: block;
     width: 50%;
     height: 50%;
-    margin: auto;
-    transform: translate(0, 50%);
+    transform: translate(50%, 50%);
     border: solid black 1px;
     border-radius: 0.5em;
     background-color: yellow;
