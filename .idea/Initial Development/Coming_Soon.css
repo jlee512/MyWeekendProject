@@ -26,13 +26,17 @@ hr{
 }
 
 #blankRow{
-    height: 20vh;
+    height: 30vw;
+    min-height: 40vh;
+    max-height: 50vh;
     background-image: url("Photos/refillBackground.png");
     background-size: 100%;
 }
 
 #animationRow{
-    height: 30vh;
+    height: 10vw;
+    min-height: 10vh;
+    max-height: 20vh;
     background-image: url("Photos/refillBackground.png");
     background-size: 100%;
 }
@@ -48,7 +52,7 @@ hr{
 }
 
 .header.col-3{
-    background-color: #d5f4e6;
+    background-color: #80ced6;
 }
 
 h1 {
@@ -130,7 +134,7 @@ p{
 
 #fryPan {
     margin: auto;
-    height: 25vh;
+    width: 20vw;
     display: block;
 
     -webkit-transform: rotateY(180deg);
