@@ -34,7 +34,7 @@ hr{
 }
 
 #animationRow{
-    height: 10vw;
+    height: 20vw;
     min-height: 10vh;
     max-height: 20vh;
     background-image: url("Photos/refillBackground.png");
