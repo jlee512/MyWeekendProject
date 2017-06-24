@@ -13,6 +13,10 @@ html, body{
     background-color: #80ced6;
 }
 
+body {
+    font-size: 16pt;
+}
+
 hr{
     height: 5px;
     width: 100%;
@@ -23,6 +27,12 @@ hr{
 }
 
 #headerRow{
+    text-align: center;
+}
+
+h1 {
+    background-color: inherit;
+    font-size: 1.5em;
 }
 
 #blankRow{
@@ -34,17 +44,14 @@ hr{
 }
 
 #animationRow{
-    height: 20vw;
-    min-height: 10vh;
-    max-height: 20vh;
+    height: 15vw;
+    max-height: 15vh;
     background-image: url("Photos/refillBackground.png");
     background-size: 100%;
 }
 
 #welcomeMessage{
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
+    text-align: center;
     align-items: center;
     list-style-type: none;
     background-image: url("Photos/refillBackground.png");
@@ -53,10 +60,6 @@ hr{
 
 .header.col-3{
     background-color: #80ced6;
-}
-
-h1 {
-    background-color: inherit;
 }
 
 /*Text Formatting*/
@@ -68,6 +71,7 @@ h1 {
 p{
     margin: auto;
     display: block;
+    font-size: 1em;
 }
 
 /*Check box formatting*/
@@ -134,7 +138,7 @@ p{
 
 #fryPan {
     margin: auto;
-    width: 20vw;
+    height: 100%;
     display: block;
 
     -webkit-transform: rotateY(180deg);
@@ -149,6 +153,13 @@ p{
     animation-duration: 1.5s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
+}
+
+#pancake1{
+    width: 160px;
+    height: 80px;
+    background: palegoldenrod;
+    border-radius: 50%;
 }
 
 #fryPan:hover {
@@ -184,13 +195,8 @@ p{
         padding: 2%;
     }
 
-    /*Increase font size for large screen*/
-    h1 {
-        font-size: 4em;
-    }
-
     p {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .row.blank.large {
